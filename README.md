@@ -1,4 +1,4 @@
-# rollup-plugin-execute
+# rollup-plugin-shell
 
 Execute shell commands in Rollup.
 
