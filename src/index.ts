@@ -14,7 +14,7 @@ type Arguments = Command | Commands | Options;
 const defaultHook: Hook = "generateBundle";
 const defaultSync: Sync = false;
 
-function execute(args: Arguments) {
+module.exports = function execute(args: Arguments) {
   if (typeof args === "string") args = [args];
   if (Array.isArray(args)) args = { commands: args, hook: defaultHook, sync: defaultSync };
   let { commands, hook = defaultHook, sync = defaultSync } = args;
@@ -28,6 +28,4 @@ function execute(args: Arguments) {
       }
     },
   };
-}
-
-module.exports = execute;
+};
