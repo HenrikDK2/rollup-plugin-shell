@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-shell",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Execute shell commands in Rollup.",
   "main": "dist/index.js",
   "homepage": "https://github.com/HenrikDK2/rollup-plugin-shell",
@@ -33,8 +33,5 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.32.1",
     "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "rollup-plugin-shell": "^1.0.3"
   }
 }
