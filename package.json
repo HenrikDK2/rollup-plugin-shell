@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-shell",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Execute shell commands in Rollup.",
   "main": "dist/index.js",
   "homepage": "https://github.com/HenrikDK2/rollup-plugin-shell",
@@ -24,11 +24,11 @@
   "author": "Henrik Mundt Milo",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^14.14.31",
-    "rollup": "^2.39.0",
+    "@types/node": "^18.0.0",
+    "rollup": "^2.75.7",
     "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.30.0",
-    "typescript": "^4.1.5"
+    "rollup-plugin-typescript2": "^0.32.1",
+    "typescript": "^4.7.4"
   },
   "dependencies": {}
 }
