@@ -25,10 +25,10 @@ export default {
     file: "dist/index.js",
   },
   plugins: [
-    // Run mulitple commands with a specific rollup hook.
+    // Run mulitple commands with a specific rollup hook
     execute({ commands: ["eslint src"], hook: "buildStart" }),
 
-    // Run commands with the default rollup hook in an array.
+    // Run multiple commands with the default rollup hook
     execute([
       "copyfiles dist/**/* example/package -u 1",
       "live-server --watch=example --open=example",
