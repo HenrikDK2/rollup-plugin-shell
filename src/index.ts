@@ -1,7 +1,12 @@
 const { spawn, spawnSync } = require("child_process");
 
 type Sync = boolean;
-type Hook = "buildEnd" | "buildStart" | "generateBundle" | "moduleParsed" | "closeBundle";
+type Hook =
+  | "buildEnd"
+  | "buildStart"
+  | "generateBundle"
+  | "moduleParsed"
+  | "closeBundle";
 type Command = string;
 type Commands = Array<string>;
 type Options = {
@@ -17,8 +22,12 @@ const defaultSync: Sync = false;
 
 const execute: Execute = (args) => {
   if (typeof args === "string") args = [args];
-  if (Array.isArray(args)) args = { commands: args, hook: defaultHook, sync: defaultSync };
+  if (Array.isArray(args)) {
+    args = { commands: args, hook: defaultHook, sync: defaultSync };
+  }
+
   let { commands, hook = defaultHook, sync = defaultSync } = args;
+
   return {
     name: "rollup-plugin-shell",
     [hook]: () => {
