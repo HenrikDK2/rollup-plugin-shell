@@ -3,4 +3,5 @@ README.md
 rollup.config.js
 tsconfig.json
 src
+test
 *.tgz

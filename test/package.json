@@ -1,0 +1,12 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.demo.js",
+  "scripts": {
+    "test": "rollup -c rollup.config.demo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
