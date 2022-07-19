@@ -10,7 +10,7 @@ export default {
     terser({
       output: { comments: false },
     }),
-    
+
     execute("echo IT WORKS!!!"),
 
     execute({ commands: ["eslint src"], hook: "buildStart" }),
