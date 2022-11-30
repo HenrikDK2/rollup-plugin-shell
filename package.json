@@ -6,7 +6,7 @@
   "homepage": "https://github.com/HenrikDK2/rollup-plugin-shell",
   "bugs": "https://github.com/HenrikDK2/rollup-plugin-shell/issues",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c --bundleConfigAsCjs",
     "example": "npm run start --prefix example"
   },
   "keywords": [
@@ -25,13 +25,13 @@
   "author": "Henrik Mundt Milo",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^18.0.6",
+    "@rollup/plugin-terser": "^0.1.0",
+    "@rollup/plugin-typescript": "^10.0.1",
+    "@types/node": "^18.11.9",
     "copyfiles": "^2.4.1",
-    "eslint": "^8.20.0",
+    "eslint": "^8.28.0",
     "live-server": "^1.2.2",
-    "rollup": "^2.77.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "rollup-plugin-typescript2": "^0.32.1",
-    "typescript": "^4.7.4"
+    "rollup": "^3.5.0",
+    "typescript": "^4.9.3"
   }
 }

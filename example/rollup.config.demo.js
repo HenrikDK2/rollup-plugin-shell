@@ -1,9 +1,10 @@
 import execute from "rollup-plugin-shell";
-import { terser } from "rollup-plugin-terser";
+import terser from "@rollup/plugin-terser";
 
 export default {
   input: "src/index.js",
   output: {
+    format: "cjs",
     file: "dist/index.js",
   },
   plugins: [
@@ -15,9 +16,6 @@ export default {
 
     execute({ commands: ["eslint src"], hook: "buildStart" }),
 
-    execute([
-      "copyfiles static/** dist -u 1",
-      "live-server --watch=dist --open=dist",
-    ]),
+    execute(["copyfiles static/** dist -u 1", "live-server --watch=dist --open=dist"]),
   ],
 };

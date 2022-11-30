@@ -4,7 +4,7 @@
   "description": "",
   "main": "rollup.config.demo.js",
   "scripts": {
-    "start": "sudo npm link rollup-plugin-shell && rollup -c rollup.config.demo.js"
+    "start": "sudo npm link rollup-plugin-shell && rollup -c rollup.config.demo.js --bundleConfigAsCjs"
   },
   "keywords": [],
   "author": "",
