@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-shell",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Execute shell commands in Rollup.",
   "main": "dist/index.js",
   "homepage": "https://github.com/HenrikDK2/rollup-plugin-shell",
